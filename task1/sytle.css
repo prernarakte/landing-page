@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-section{
+         min-height: 100vh;
+         background:
+         linear-gradient(black, transparent),
+         url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         position: relative;
+         z-index: 2;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding: 0rem 1rem;
+    color:burlywood;
+    animation: movedown 850ms ease-in 1ms ;
+
+    
+
+}
+
+@keyframes movedown {
+    from{
+        transform: translateY(-100%);
+    }TO{
+        transform: translate(0%);
+    }
+}
+
+
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:blanchedalmond;
+    border: 2px solid transparent;
+    
+}
+
+.navbar ul li ,a:hover{
+    border-bottom: 2px solid white;
+    transition: 0.5s;
+    background-color:black;
+    
+}
+    
+
+
+.hero-text{
+    color: aliceblue;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    animation: slide 1s ease-in-out;
+    
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(-100%);
+    }
+      to{
+        transform: translateX(0%);
+      }
+    
+}
+
+.hero-text::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:burlywood;
+    z-index: 1;
+    top: 0;
+    opacity: 0.2;
+    transition: 0.5s;
+
+}
+
+
+
+
+.hero-text a{
+    color: aliceblue;
+    background: #f39c12;
+    font-weight: 900;
+    padding: 0.6rem 1rem;
+    font-size: large;
+    margin: 0.8rem auto;
+    display: block;
+    transition: opacity 250ms linear;
+}
+
+
+.hero-text,a:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+    
+    
+}
+
+
+.hero-text h3
+{
+    font-size:xx-large;
+}
+
+.hero-text p{
+    font-size:larger;
+}
+
+
+
+
